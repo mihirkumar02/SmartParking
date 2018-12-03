@@ -1,0 +1,191 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height: 1.5;
+  padding:0;
+  margin:0;
+  background-color: forestgreen;
+}
+/*Global*/
+
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+/*Header*/
+
+header{
+  background-color: white;
+  color: white;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: orange 3px solid;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:15px;
+}
+
+header .highlight, header .current a{
+  color:forestgreen;
+  font-weight:bold;
+  font-size:20px;
+}
+
+header a:hover{
+  color:forestgreen;
+  font-weight:bold;
+}
+
+/*Showcase*/
+
+#showcase{
+    min-height: 800px;
+    background: url("../images/parking.jpg") no-repeat fixed;
+    text-align:center;
+    color:black;
+}
+
+#showcase h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcase p{
+  font-size:40px;
+}
+
+#showcase h4{
+  font-size:20px;
+}
+
+.adminform input{
+  padding:10px;
+  border-radius: 5px;
+}
+
+
+.click{
+  padding:10px 20px 10px 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  font-size:15px;
+}
+
+
+/*About*/
+#showcaseabout{
+    min-height: 800px;
+    background: url("../images/parking.jpg") no-repeat fixed;
+    text-align:center;
+    color:black;
+}
+
+#showcaseabout h1{
+  margin-top:100px;
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+#showcaseabout p{
+  font-size:30px;
+}
+
+/*Download*/
+#download li a{
+  text-decoration: none;
+  font-weight: bold;
+  color:white;
+  float:left;
+  margin:auto;
+  font-size: 30px;
+}
+
+#download{
+  border-top:2px solid orange;
+  padding:40px;
+  margin-bottom: 10px;
+  color:white;
+  background: forestgreen;
+}
+
+#download h1 a{
+  margin-left:143px;
+  text-decoration: none;
+  color:white;
+  float:left;
+}
+
+#download h2 a{
+  margin-left:10px;
+  margin-top:10px;
+  text-decoration: none;
+  color:white;
+  float:left;
+}
+
+#download  input{
+ padding: 0 15px 0 20px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left:40px;
+}
+
+#download label{
+  text-decoration: none;
+  font-weight:bold;
+  color:white;
+  float:left;
+  margin:auto;
+  font-size: 20px;
+}
+
+/*Footer*/
+footer{
+  background-color: white;
+  color: white;
+  paddig-top: 30px;
+  min-height: 70px;
+  border-top: orange 3px solid;
+}
+
+footer p{
+  color:forestgreen;
+  font-size:25px;
+  float:right;
+  margin-right:10px;
+  margin-bottom:2px;
+  font-weight:bold;
+}

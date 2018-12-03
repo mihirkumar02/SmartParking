@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" content="initial-scale=1.0">
+    <meta name="description" content="User login and sign up form">
+    <meta name="keywords" content="parking, crowd, malls, smart system">
+    <meta name="author" content="Rachet">
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <title>Park It Landing Page | Website</title>
+  </head>
+
+  <body>
+
+   <header>
+        <div class="container">
+            <div id="branding">
+               <img src="images/parkItLogo.jpg" width="100" height="80"/>
+            </div>
+            <nav>
+              <ul>
+                  <li class="current"><a href="site.html">Home</a></li>
+                  <li class="current"><a href="about.html">About</a></li>
+              </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+          <h1>Book your parking slot</h1>
+          <p>Avoid the clusters.</p>
+      </div>
+      <div>
+        <p>Admin Login</p>
+        <form class ="adminform" action="admin.php" method="get">
+          <input type="text" name="name" placeholder="Username">
+          <input type="password" name="password" placeholder="Password">
+          <button class="click" type="submit" name="submit">Log In</button>
+        </form>
+      </div>
+      <div>
+        <p>User Sign Up</p>
+        <form class ="adminform" action="user.php" method="get">
+          <input type="text" name="uname" placeholder="Username">
+          <input type="password" name="password" placeholder="Password">
+          <button class="click" type="submit" name="submit">Register</button>
+        </form>
+      </div>
+    </section>
+
+     <section id="download">
+      <div class="container">
+          <form>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <label>Book a slot  </label>
+                  </div>
+                  <div class="col-lg-6">
+                  <form class="form" action="locate.php" method="get" >
+                   <input  name="locater" type="text" placeholder="Enter a location">
+                   <button class="click" type="submit" name="submit">Submit</button>
+                  </form>
+                    <script>
+                      google.maps.event.addDomListener(window, 'load', initialize);
+                      function initialize() {
+                          var input = document.getElementById('pac-input');
+                          var autocomplete = new google.maps.places.Autocomplete(input);
+                          autocomplete.addListener('place_changed', function () {
+                              var place = autocomplete.getPlace();
+                              console.log(place);
+                              console.log(place.geometry['location'].lat());
+                              console.log(place.geometry['location'].lng());
+                          });
+
+                      }
+
+                   </script>
+                  </div>
+
+              </div>
+
+          </form>
+      </div>
+        <h1><a href="">Click here to download the application</a></h1>
+    </section>
+
+    <footer>
+      <p>Park It Smart Parking Solutions, Copyright &copy; 2018</p>
+    </footer>
+  </body>
+</html>
